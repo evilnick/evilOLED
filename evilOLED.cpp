@@ -1,3 +1,13 @@
+/*
+evilOLED is an Arduino library for efficient use of SSD1306 based
+displays, specifically 128x64 pixel ones using the I2C 2-wire
+interface. This driver does not use a framebuffer, therefore
+leaving you with plenty of dynamic memory for your own code!
+Written by Nick Veitch, 2014 <veryevilnick@gmail.com>
+Released under MIT license
+Latest versions available at https://github.com/evilnick/evilOLED/
+*/
+
 #include "evilOLED.h"
 
 const char fb[1024] PROGMEM = {
@@ -211,10 +221,6 @@ evilOLED::evilOLED(char sda, char scl)
         init();
         cls(0xff);
         splash();
-        //sendCmd(0x00);//set page mode
-	//sendCmd(0x00);//low column
-       // sendCmd(0x10);//high column
-        //sendCmd(0xB0);//page address
         delay(1000);
 }
 
