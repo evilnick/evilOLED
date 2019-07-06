@@ -1,10 +1,8 @@
 evilOLED
 ========
-
 Arduino OLED character-based display lib for I2C two-wire SSD1306-based OLED displays 128x64
 
-This library was created for several reasons:
-
+##This library was created for several reasons:
  - These specific OLED displays are cheap! Check eBay (about $3 each).
  - The Adafruit libraries for similar displays don't work with I2C
  - Other libraries implement a framebuffer, which instantly uses about half of your dynamic 
@@ -14,7 +12,6 @@ This library was created for several reasons:
  discovered after I bought several that there was no library to make them work
  
 ##Things this library will do
- 
  Using a font file stored in Arduino PROGMEM, this library can intialise the display and do the 
  following:
  
@@ -27,7 +24,6 @@ This library was created for several reasons:
   - Integrated software 2-pin I2C comms, leaving Arduino SDA/SCL for other uses
   
 ##Things this library may eventually do (roadmap)
-  
   - support double height font printing
   - support inverted text 
   - support scrolling modes
