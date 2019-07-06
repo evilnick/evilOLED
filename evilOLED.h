@@ -28,8 +28,6 @@ using namespace std;
 #define PAGE6 0xB6
 #define PAGE7 0xB7
 
-
-
 class evilOLED {
  public:
   evilOLED(char sda, char scl);
